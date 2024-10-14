@@ -97,3 +97,82 @@
 // }
 
 // console.log(reverseString("hello"));
+
+/*______________________________ qiyinroq masalalar___________________________________- */
+
+// 1-masala: 
+function printArr(arr) {
+    arr.forEach(num => console.log(num));
+}
+
+// // 2-masala: 
+// function maxNum(arr) {
+//     return Math.max(...arr);
+// }
+
+// // 3-masala: 
+// function arrLength(arr) {
+//     return arr.length;
+// }
+
+// // 4-masala: 
+// function sumArr(arr) {
+//     return arr.reduce((a, b) => a + b, 0);
+// }
+
+// // 5-masala: 
+// function countElem(arr, elem) {
+//     return arr.filter(x => x === elem).length;
+// }
+
+// // 6-masala: 
+// function oddNums(arr) {
+//     return arr.filter(x => x % 2 !== 0);
+// }
+
+// // 7-masala:
+// function reverseArr(arr) {
+//     return arr.reverse();
+// }
+
+// // 8-masala: 
+// function negativeNums(arr) {
+//     return arr.filter(x => x < 0);
+// }
+
+// // 9-masala: 
+// function popElem(arr) {
+//     arr.pop();
+//     return arr;
+// }
+
+// // 10-masala: 
+// function pushElem(arr, elem) {
+//     arr.push(elem);
+//     return arr;
+// }
+
+// // 11-masala: 
+// function mergeArr(arr1, arr2) {
+//     return arr1.concat(arr2);
+// }
+
+// // 12-masala: 
+// function squareArr(arr) {
+//     return arr.map(x => x * x);
+// }
+
+// // 13-masala: 
+// function removeEven(arr) {
+//     return arr.filter(x => x % 2 !== 0);
+// }
+
+// // 14-masala: 
+// function toUpperCaseArr(arr) {
+//     return arr.map(x => typeof x === 'string' ? x.toUpperCase() : x);
+// }
+
+// // 15-masala: 
+// function lengthOfStrings(arr) {
+//     return arr.map(x => typeof x === 'string' ? x.length : x);
+// }
