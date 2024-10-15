@@ -88,7 +88,7 @@
 //   return Math.min(...arr);
 // }
 
-// console.log(findSmallestElement([5, 2, 9, 1, 7])); 
+// console.log(findSmallestElement([5, 2, 9, 1, 7]));
 
 // // 10-masala
 
@@ -100,79 +100,75 @@
 
 /*______________________________ qiyinroq masalalar___________________________________- */
 
-// 1-masala: 
-function printArr(arr) {
-    arr.forEach(num => console.log(num));
-}
-
-// // 2-masala: 
-// function maxNum(arr) {
-//     return Math.max(...arr);
+// 1-masala:
+// function printArr(arr) {
+//   // Massiv ichidagi har bir elementni konsolga chiqaramiz
+//   arr.forEach((num) => console.log(num));
 // }
 
-// // 3-masala: 
-// function arrLength(arr) {
-//     return arr.length;
-// }
+// const myArray = [1, 2, 3, 4, 5];
 
-// // 4-masala: 
-// function sumArr(arr) {
-//     return arr.reduce((a, b) => a + b, 0);
-// }
+// const arrayUtils = {
+//     maxNum: function(arr) {
+//         return Math.max(...arr);
+//     },
+    
+//     arrLength: function(arr) {
+//         return arr.length;
+//     },
+    
+//     sumArr: function(arr) {
+//         return arr.reduce((a, b) => a + b, 0);
+//     },
+    
+//     countElem: function(arr, elem) {
+//         return arr.filter(x => x === elem).length;
+//     },
+    
+//     oddNums: function(arr) {
+//         return arr.filter(x => x % 2 !== 0);
+//     },
+    
+//     reverseArr: function(arr) {
+//         return arr.reverse();
+//     },
+    
+//     negativeNums: function(arr) {
+//         return arr.filter(x => x < 0);
+//     },
+    
+//     popElem: function(arr) {
+//         arr.pop();
+//         return arr;
+//     },
+    
+//     pushElem: function(arr, elem) {
+//         arr.push(elem);
+//         return arr;
+//     },
+    
+//     mergeArr: function(arr1, arr2) {
+//         return arr1.concat(arr2);
+//     },
+    
+//     squareArr: function(arr) {
+//         return arr.map(x => x * x);
+//     },
+    
+//     removeEven: function(arr) {
+//         return arr.filter(x => x % 2 !== 0);
+//     },
+    
+//     toUpperCaseArr: function(arr) {
+//         return arr.map(x => typeof x === 'string' ? x.toUpperCase() : x);
+//     },
+    
+//     lengthOfStrings: function(arr) {
+//         return arr.map(x => typeof x === 'string' ? x.length : x);
+//     }
+// };
 
-// // 5-masala: 
-// function countElem(arr, elem) {
-//     return arr.filter(x => x === elem).length;
-// }
-
-// // 6-masala: 
-// function oddNums(arr) {
-//     return arr.filter(x => x % 2 !== 0);
-// }
-
-// // 7-masala:
-// function reverseArr(arr) {
-//     return arr.reverse();
-// }
-
-// // 8-masala: 
-// function negativeNums(arr) {
-//     return arr.filter(x => x < 0);
-// }
-
-// // 9-masala: 
-// function popElem(arr) {
-//     arr.pop();
-//     return arr;
-// }
-
-// // 10-masala: 
-// function pushElem(arr, elem) {
-//     arr.push(elem);
-//     return arr;
-// }
-
-// // 11-masala: 
-// function mergeArr(arr1, arr2) {
-//     return arr1.concat(arr2);
-// }
-
-// // 12-masala: 
-// function squareArr(arr) {
-//     return arr.map(x => x * x);
-// }
-
-// // 13-masala: 
-// function removeEven(arr) {
-//     return arr.filter(x => x % 2 !== 0);
-// }
-
-// // 14-masala: 
-// function toUpperCaseArr(arr) {
-//     return arr.map(x => typeof x === 'string' ? x.toUpperCase() : x);
-// }
-
-// // 15-masala: 
-// function lengthOfStrings(arr) {
-//     return arr.map(x => typeof x === 'string' ? x.length : x);
-// }
+// // Example usage:
+// const numbers = [1, 2, 3, -4, 5];
+// console.log(arrayUtils.maxNum(numbers)); // 5
+// console.log(arrayUtils.sumArr(numbers)); // 7
