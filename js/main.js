@@ -1,174 +1,286 @@
-/* __________________________________ function masalalar _____________________________________ */
 // // 1-masala
-// function square(num) {
-//    return num * num;
-//  }
 
-//  console.log("Kvadrat: " + square(7));
-// // 2- masala
-// function sumow(a, b) {
-//   return a + b;
+// function kv(res) {
+//   return res * res
 // }
+// let str = +prompt("Sonni kiriting")
+// alert(kv(str));
 
-// let res = sumow(10, 5);
+// // 2-masala
 
-// console.log("yigindi:" +res);
+// function sum(num1, num2) {
+//   return num1 + num2;
+// }
+// let num1 = +prompt("1-sonni kiriting");
+// let num2 = +prompt("2-sonni kiriting");
+// alert(sum(num1, num2));
 
 // // 3-masala
 
-// function greet(name) {
-// console.log(`salom ${name}`);
-// }
-// greet("Avazbek")
+// function create(name, and) {
+//     alert(`Salom ${name} sizning yoshingiz ${age} da`);
+//   }
+//   let name = prompt("Ismingizni kiriting");
+//   let age = prompt("Yoshingizni kiriting");
+//   create(name, age);
 
 // // 4-masala
 
-// function findMax(a, b) {
-//   if (a > b) {
-//     return a;
+// function max(num1, num2) {
+//   if (num1 < num2) {
+//     alert(num2);
 //   } else {
-//     return b;
+//     alert(num1);
 //   }
 // }
-
-// let result = findMax(10, 5);
-// console.log("Katta son: " + result);
+// let num1 = +prompt("1-sonni kiriting");
+// let num2 = +prompt("2-sonni kiriting");
+// max(num1, num2);
 
 // // 5-masala
 
-// function sumArray(numbers) {
-//   let sum = 0;
-
-//   for (let i = 0; i < numbers.length; i++) {
-//     sum += numbers[i];
+// let arr = [1, 2, 3, 4, 5];
+// let res = 0;
+// function sum_arr() {
+//   for (let i = 0; i < arr.length; i++) {
+//     res += arr[i];
 //   }
-
-//   return sum;
+//   return res;
 // }
-
-// let numbers = [5, 10, 15, 20];
-// let result = sumArray(numbers);
-
-// console.log("Umumiy yig'indi: " + result);
+// alert(sum_arr());
 
 // // 6-masala
 
-// function isPositive(arg) {
-//   if (arg > 0) {
-//     return "musbat";
+// let num = +prompt("sonni kiriting");
+// function check(num) {
+//   if (num > 0) {
+//     alert("Musbat son");
 //   } else {
-//     return "musbat emas";
+//     alert("Manfiy son");
 //   }
 // }
-
-// // Funksiyani chaqirib tekshirish
-// console.log(isPositive(5));
-// console.log(isPositive(-3));
-// console.log(isPositive(0));
+// check(num);
 
 // // 7-masala
 
-// function wordLength(word) {
+// let word = "Hello world";
+// function wordLength() {
 //   return word.length;
 // }
-
-// console.log(wordLength("Hello world!"));
+// alert(wordLength());
 
 // // 8-masala
 
-// function concatenateStrings(string1, string2) {
-//   return string1 + string2;
+// let str1 = "Hello ";
+// let str2 = "world";
+// function concat() {
+//   return str1 + str2;
 // }
-
-// console.log(concatenateStrings("Hello,", " World!"));
+// alert(concat());
 
 // // 9-masala
 
-// function findSmallestElement(arr) {
-//   return Math.min(...arr);
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function min() {
+//   let min = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//       min = arr[i];
+//     }
+//   }
+//   return min;
 // }
-
-// console.log(findSmallestElement([5, 2, 9, 1, 7]));
+// alert(min());
 
 // // 10-masala
 
-// function reverseString(str) {
-//    return str.split('').reverse().join('');
-// }
-
-// console.log(reverseString("hello"));
-
-/*______________________________ qiyinroq masalalar___________________________________- */
-
-// 1-masala:
-// function printArr(arr) {
-//   // Massiv ichidagi har bir elementni konsolga chiqaramiz
-//   arr.forEach((num) => console.log(num));
-// }
-
-// const myArray = [1, 2, 3, 4, 5];
-
-// const arrayUtils = {
-//     maxNum: function(arr) {
-//         return Math.max(...arr);
-//     },
-    
-//     arrLength: function(arr) {
-//         return arr.length;
-//     },
-    
-//     sumArr: function(arr) {
-//         return arr.reduce((a, b) => a + b, 0);
-//     },
-    
-//     countElem: function(arr, elem) {
-//         return arr.filter(x => x === elem).length;
-//     },
-    
-//     oddNums: function(arr) {
-//         return arr.filter(x => x % 2 !== 0);
-//     },
-    
-//     reverseArr: function(arr) {
-//         return arr.reverse();
-//     },
-    
-//     negativeNums: function(arr) {
-//         return arr.filter(x => x < 0);
-//     },
-    
-//     popElem: function(arr) {
-//         arr.pop();
-//         return arr;
-//     },
-    
-//     pushElem: function(arr, elem) {
-//         arr.push(elem);
-//         return arr;
-//     },
-    
-//     mergeArr: function(arr1, arr2) {
-//         return arr1.concat(arr2);
-//     },
-    
-//     squareArr: function(arr) {
-//         return arr.map(x => x * x);
-//     },
-    
-//     removeEven: function(arr) {
-//         return arr.filter(x => x % 2 !== 0);
-//     },
-    
-//     toUpperCaseArr: function(arr) {
-//         return arr.map(x => typeof x === 'string' ? x.toUpperCase() : x);
-//     },
-    
-//     lengthOfStrings: function(arr) {
-//         return arr.map(x => typeof x === 'string' ? x.length : x);
+// let str = "salom";
+// function reverse() {
+//     let rev = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         rev += str[i];
 //     }
-// };
+//     return rev;
+// }
+// alert(reverse());
+// // // Massiv va funksiyalar
 
-// // Example usage:
-// const numbers = [1, 2, 3, -4, 5];
-// console.log(arrayUtils.maxNum(numbers)); // 5
-// console.log(arrayUtils.sumArr(numbers)); // 7
+// // 1-masala
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function res() {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+//   }
+// }
+// res();
+
+// // 2-masala
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function max() {
+//   let max = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(max());
+
+// // 3-masala
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function arrLength() {
+//   return arr.length;
+// }
+// console.log(arrLength());
+
+// // 4-masala
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function sum() {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+// alert(sum());
+
+// // 5-masala
+
+// let arr = [1, 2, 3, 4, 5, 1, 2, 1, 6, 7];
+// function count(res) {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == res) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(count(1));
+
+// // 6-masala
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function num() {
+//   let res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 1) {
+//       res.push(arr[i]);
+//     }
+//   }
+//   return res;
+// }
+// console.log(num());
+
+// // 7-masala
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function revNum() {
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     console.log(arr[i]);
+//   }
+// }
+// revNum();
+
+// // 8-masala
+
+// let arr = [
+//   1, -1, 2, -2, 3, -3, 4, -4, 5, -5, 6, -6, 7, -7, 8, -8, 9, -9, 10, -10,
+// ];
+// function negativs() {
+//   let res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//       res.push(arr[i]);
+//     }
+//   }
+//   return res;
+// }
+// console.log(negativs());
+
+// // 9-masala
+
+// let arr = [1, 2, 3, 4, 5];
+// function remove() {
+//   arr.pop();
+//   return arr;
+// }
+// console.log(remove());
+
+// // 10-masala
+
+// let arr = [1, 2, 3, 4, 5];
+// function addNew(new) {
+//   arr.push(new);
+//   return arr;
+// }
+// console.log(addNew(5));
+
+// // 11-masala
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [4, 5, 6];
+// function merged() {
+//     return arr1.concat(arr2);
+// }
+// console.log(merged());
+
+// // 12-masala
+
+// let arr = [1, 2, 3, 4, 5];
+// function arrKv() {
+//   let res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     res.push(arr[i] * arr[i]);
+//   }
+//   return res;
+// }
+// console.log(arrKv());
+
+// // 13-masala
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function remobeArr() {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       sum.push(arr[i]);
+//     }
+//   }
+//   return sum;
+// }
+// console.log(remobeArr());
+
+// // 14-masala
+
+// let arr = ["olma", "banan", "xurmo"];
+// function uppercase() {
+//   let sum = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     sum.push(arr[i].toUpperCase());
+//   }
+//   return sum;
+// }
+// console.log(uppercase());
+
+// // 15-masala
+
+// function strLength(arr) {
+//   let res = [];
+//   let i = 0;
+//   while (i < arr.length) {
+//     if (typeof arr[i] == "string") {
+//       res.push(arr[i].length);
+//     } else {
+//       res.push(0);
+//     }
+//     i++;
+//   }
+//   return res;
+// }
+// console.log(strLength(["nok", 489, "snickers", true]));
